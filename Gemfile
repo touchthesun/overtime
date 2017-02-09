@@ -20,7 +20,7 @@ gem 'devise', '~> 4.2.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.5.0'
   gem 'capybara'
   gem 'database_cleaner'
 end
