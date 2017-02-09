@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: overtime_development
+
+
+
+
+
+
+
+test:
+  <<: *default
+  database: overtime_test
+
+production:
+  <<: *default
+  database: overtime_production
+  username: overtime
+  password: <%= ENV['OVERTIME_DATABASE_PASSWORD'] %>
