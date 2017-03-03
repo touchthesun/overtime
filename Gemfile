@@ -18,6 +18,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.2.0'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'gritter', '~> 1.2'
+gem 'administrate', '~> 0.4.0'
+gem 'bourbon'
 
 
 group :development, :test do
