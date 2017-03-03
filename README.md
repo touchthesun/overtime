@@ -1,17 +1,22 @@
-##Overtime app
+# Overtime app
 
-Key requirements - Company needs that salaried employees did or did not get overtime each week
+## Key requirements - Company needs that salaried employees did or did not get overtime each week
 
-##Models
+## Models
+ - x Post -> date:date rationale:text
+ - x User -> Devise
+ - x AdminUser -> STI
 
-Post -> date:date rationale:text User -> Devise AdminUser -> STI
 
-##Features
+## Features
 
  - Approval Workflow
  - SMS sending
  - Admin dashboard
  - Email summary to managers for approval
- - UI
+ 
+## UI
+ - Bootstrap -> Formatting
 
-##Bootstrap -> Formatting
+## Refactor TODOs:
+ - Refactor user association integration test in post_spec
