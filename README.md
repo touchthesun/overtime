@@ -12,7 +12,8 @@
 
  - Approval Workflow
  - SMS sending
- - Admin dashboard
+ X Admin dashboard
+ X Block non-admins from accessing admin dashboard
  - Email summary to managers for approval
  
 ## UI
