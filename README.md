@@ -1,6 +1,6 @@
 # Overtime app
 
-## Key requirements - Company needs that salaried employees did or did not get overtime each week
+## Key requirements - Company needs to track if salaried employees did or did not get overtime each week
 
 ## Models
  - x Post -> date:date rationale:text
