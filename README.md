@@ -21,3 +21,4 @@
 
 ## Refactor TODOs:
  - Refactor user association integration test in post_spec
+ - Refactor posts/_form with posts user status
