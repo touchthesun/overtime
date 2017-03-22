@@ -20,9 +20,6 @@ describe 'edit' do
         expect(@post.reload.status).to eql('approved')
       end
 
-      it 'can be edited by an admin' do
-
-      end
 
       it 'cannot be edited by non-admin' do
         logout(:user)
@@ -33,7 +30,5 @@ describe 'edit' do
 
         expect(page).to_not have_content('Approved')
       end
-
-
     end
   end
