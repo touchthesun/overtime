@@ -20,7 +20,6 @@ describe 'edit' do
         expect(@post.reload.status).to eql('approved')
       end
 
-
       it 'cannot be edited by non-admin' do
         logout(:user)
         user = FactoryGirl.create(:user)
