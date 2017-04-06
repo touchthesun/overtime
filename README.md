@@ -22,3 +22,4 @@
 ## Refactor TODOs:
  - Refactor user association integration test in post_spec
  - Refactor posts/_form with posts user status
+ - fix post_spec.rb line 52 to have correct user reference
