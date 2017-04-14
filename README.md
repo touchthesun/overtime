@@ -12,14 +12,15 @@
 
  - Approval Workflow
  - SMS sending
- - x Admin dashboard
+ - x Administrate admin dashboard
  - x Block non-admins from accessing admin dashboard
  - Email summary to managers for approval
  
 ## UI
- - Bootstrap -> Formatting
+ - x Bootstrap -> Formatting
+ - Icons from Font Awesome
+ - x Update the styles for forms
 
 ## Refactor TODOs:
  - Refactor user association integration test in post_spec
  - Refactor posts/_form with posts user status
- - fix post_spec.rb line 52 to have correct user reference
