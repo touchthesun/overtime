@@ -33,7 +33,12 @@ describe 'navigate' do
 
     it 'has a scope such that users can only see their own posts' do
       
-      non_authorized_user = User.create(first_name: 'Non', last_name: 'Auth', email: "nonauth@test.com", password: "asdfasdf", password_confirmation: "asdfasdf")
+      non_authorized_user = User.create(first_name: 'Non', 
+                                        last_name: 'Auth', 
+                                        email: "nonauth@test.com", 
+                                        password: "asdfasdf", 
+                                        password_confirmation: "asdfasdf",
+                                        phone: "55555555555")
       post_from_other_user = Post.create(date: Date.today, rationale: "you shouldn't see me", user_id: non_authorized_user.id, overtime_request: 3.5)
       
       visit posts_path
