@@ -2,8 +2,8 @@
                     password: "asdfasdf", 
                     password_confirmation: "asdfasdf", 
                     first_name: "John", 
-                    last_name: "Snow"
-                    phone: "34627127926")
+                    last_name: "Snow",
+                    phone: "4627127926")
 
 puts "1 user created"
 
@@ -11,8 +11,8 @@ AdminUser.create(email: "admin@test.com",
                  password: "asdfasdf", 
                  password_confirmation: "asdfasdf", 
                  first_name: "Bob", 
-                 last_name: "Law"
-                 phone: "34627127926")
+                 last_name: "Law",
+                 phone: "4627127926")
 
 puts "1 admin user created"
 
@@ -21,3 +21,9 @@ puts "1 admin user created"
 end
 
 puts "100 posts have been created"
+
+100.times do |audit_log|
+  AuditLog.create!(user_id: User.last.id, status: 0, start_date: (Date.today))
+end
+
+puts "100 audit logs have been created"
