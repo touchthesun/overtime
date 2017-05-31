@@ -13,8 +13,6 @@
 
     <%= render 'shared/audit_log_tab' if policy(AuditLog).index? %>
 
-    <% end %>
-
     <li class= <%= active?(posts_path) %> >
       <%= link_to "Add New Entry", new_post_path, id: 'new_post_from_nav' %>
     </li>
