@@ -9,7 +9,13 @@ namespace :admin do
     root to: "users#index"
   end
 
-  resources :posts
+  resources :posts do
+    member do
+      get :approve
+
+    end
+  end
+
   devise_for :users, skip: [:registrations]
   root to: 'static#home'
   root to: "home#index"
