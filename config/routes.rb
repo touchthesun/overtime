@@ -12,7 +12,6 @@ namespace :admin do
   resources :posts do
     member do
       get :approve
-
     end
   end
 

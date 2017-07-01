@@ -11,7 +11,7 @@ describe 'Homepage' do
 
    click_on("approve_#{post.id}")
 
-   expect(post.reload.status).to eql('approved')
+   expect(post.reload.status).to eq('approved')
 
   end
 end
